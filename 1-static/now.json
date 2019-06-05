@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "name": "static",
+    "scope": "trainit",
+    "alias": ["trainit-static"],
+    "regions": ["sfo1", "bru1"],
+    "builds": [
+        { "src": "index.html", "use": "@now/static" }
+    ],
+    "routes": [
+        { "src": "/status/(.*)", "dest": "index.html" }
+    ]
+}

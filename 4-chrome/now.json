@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "name": "chrome",
+    "scope": "trainit",
+    "builds": [
+        { "src": "chrome.js", "use": "@now/node", "config": { "maxLambdaSize": "40mb" } },
+        { "src": "chrome2.js", "use": "@now/node", "config": { "maxLambdaSize": "40mb" } }
+    ],
+    "routes": [
+        { "src": "/simple/(.*)", "dest": "chrome.js" },
+        { "src": "/advanced/(.*)", "dest": "chrome2.js" }
+    ]
+}

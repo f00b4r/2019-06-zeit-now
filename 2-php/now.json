@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "name": "php",
+    "scope": "trainit",
+    "builds": [
+      { "src": "*.php", "use": "@now/php" }
+    ]
+  }
